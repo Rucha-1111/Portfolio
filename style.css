@@ -1,0 +1,267 @@
+/* Rucha Gade - Portfolio Stylesheet
+    Theme: Jet Black & Electric Purple
+*/
+
+:root {
+    --bg-color: #0a0a0a;
+    --accent-purple: #a855f7;
+    --accent-glow: rgba(168, 85, 247, 0.4);
+    --text-main: #ffffff;
+    --text-dim: #a1a1aa;
+    --card-bg: #111111;
+    --card-border: #222222;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none; /* Required for custom cursor */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* --- Custom Cursor --- */
+.cursor {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-purple);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-follower {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--accent-purple);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999;
+    transition: transform 0.15s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+/* --- Navigation & Socials --- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent-purple);
+    letter-spacing: -1px;
+}
+
+.top-socials {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.top-socials a {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    transition: var(--transition-smooth);
+}
+
+.top-socials a:hover {
+    color: var(--accent-purple);
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 8px var(--accent-purple));
+}
+
+.nav-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.nav-links a:hover {
+    color: var(--accent-purple);
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.glow-text {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 700;
+    letter-spacing: -3px;
+    background: linear-gradient(to bottom, #fff 40%, var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    margin-top: 1.5rem;
+    max-width: 600px;
+    color: #666;
+}
+
+/* --- Main Layout --- */
+.container {
+    padding: 8rem 10%;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-purple);
+    margin-top: 10px;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* --- Profile/Skills --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--card-border);
+    transition: var(--transition-smooth);
+}
+
+.skill-category:hover {
+    border-color: var(--accent-purple);
+}
+
+.skill-category h3 {
+    color: var(--accent-purple);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* --- Project Cards --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--card-border);
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--accent-purple);
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.project-card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 2rem;
+}
+
+.tech-tags span {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #eee;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 4rem 0;
+    text-align: center;
+    border-top: 1px solid var(--card-border);
+    color: #444;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .glow-text { font-size: 3.5rem; }
+    .container { padding: 5rem 5%; }
+}
