@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rucha Gade | Java Backend Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
+
 <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -16,28 +21,28 @@
         <div class="logo">RG</div>
 
         <div class="top-socials">
-            <a href="https://linkedin.com/rucha-gade" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Rucha" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
-            <a href="#" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
-            <a href="mailto:ruchagade20@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/rucha-gade/" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rucha-1111/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/Rucha-Gade/" target="_blank" title="LeetCode"><i
+                    class="fas fa-code"></i></a>
+            <a href="https://www.hackerrank.com/profile/ruchagade20" target="_blank" title="HackerRank"><i
+                    class="fab fa-hackerrank"></i></a>
         </div>
 
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
     <header class="hero">
         <h1 class="glow-text">RUCHA GADE</h1>
-        <p class="subtitle">Java Developer | REST APIs | AWS Enthusiast</p>
-        <div class="hero-tags">
-            <span>Spring Boot</span>
-            <span>AWS Lambda</span>
-            <span>Scalable Systems</span>
-        </div>
+        <p class="subtitle">
+            I am a <span id="typewriter"></span><span class="type-cursor">|</span>
+        </p>
     </header>
 
     <section id="about" class="container">
@@ -46,9 +51,24 @@
             <div class="underline"></div>
         </div>
         <div class="profile-content">
-            <p>Java backend developer specializing in REST APIs, database management, and scalable system design. I focus on writing clean, maintainable code and solving real-world problems efficiently.</p>
-            <p><strong>Education:</strong> Vishwakarma University, B.Tech Computer Science (2022-2026) | CGPA: 7.9</p>
+            <p>I’m a Java backend developer who enjoys building REST APIs and working with databases. I try to write
+                code that’s clear, maintainable, and stable enough to survive sudden requirement plot twists without
+                turning into chaos. I focus more on structure than rushing endpoints, and if something looks
+                unnecessarily complicated, I usually try to simplify it before it haunts me later.</p><br>
+
+            <p>I focus on designing REST APIs with a request–response flow that won’t make future-me cry, structuring
+                data models and database interactions so they actually make sense later, and improving reliability and
+                readability instead of just “making it work.” I make it a point to break down requirements before
+                touching code, mapping business needs to backend logic that actually does what it’s supposed to, and
+                writing documentation clear enough that future-me won’t hate past-me.</p><br>
+
+            <p>Beyond coding, I have a soft spot for business analysis and writing. I enjoy understanding problems from
+                a business perspective and translating them into technical solutions that actually solve the right
+                problem, while learning cloud fundamentals and experimenting with better ways to structure backend
+                systems.</p>
+
         </div>
+
     </section>
 
     <section id="skills" class="container">
@@ -63,11 +83,17 @@
             </div>
             <div class="skill-category">
                 <h3>Web & Frameworks</h3>
-                <p>Spring Boot, Node.js, Express JS, React.js, Next.js, Angular JS, HTML, CSS</p>
+                <p>
+                    Spring Boot, Node.js, Express JS, React.js, Next.js, Angular JS,
+                    HTML, CSS
+                </p>
             </div>
             <div class="skill-category">
                 <h3>Cloud & Databases</h3>
-                <p>AWS (Lambda, S3, API Gateway, IAM), MySQL, PostgreSQL, DynamoDB, MongoDB</p>
+                <p>
+                    AWS (Lambda, S3, API Gateway, IAM), MySQL, PostgreSQL, DynamoDB,
+                    MongoDB
+                </p>
             </div>
             <div class="skill-category">
                 <h3>Tools & Practices</h3>
@@ -85,7 +111,11 @@
             <div class="project-card">
                 <span class="category">Serverless / AWS</span>
                 <h3>Sortify</h3>
-                <p>Implemented an end-to-end serverless workflow for document uploads, performing automated validation and classification using AWS Lambda, S3, and DynamoDB.</p>
+                <p>
+                    Implemented an end-to-end serverless workflow for document uploads,
+                    performing automated validation and classification using AWS Lambda,
+                    S3, and DynamoDB.
+                </p>
                 <div class="tech-tags">
                     <span>AWS Lambda</span><span>S3</span><span>DynamoDB</span>
                 </div>
@@ -94,7 +124,11 @@
             <div class="project-card">
                 <span class="category">AI / Extension</span>
                 <h3>Summar Ease</h3>
-                <p>Developed a Chrome extension using BART Transformers to provide instant AI-generated summaries of webpage text via a Flask-based REST API.</p>
+                <p>
+                    Developed a Chrome extension using BART Transformers to provide
+                    instant AI-generated summaries of webpage text via a Flask-based
+                    REST API.
+                </p>
                 <div class="tech-tags">
                     <span>NLP</span><span>Flask</span><span>Hugging Face</span>
                 </div>
@@ -103,7 +137,11 @@
             <div class="project-card">
                 <span class="category">Full Stack</span>
                 <h3>SmartSteps</h3>
-                <p>Architected an MCQ platform supporting timed quizzes and automated evaluation using Spring Boot for robust RESTful services and MongoDB for storage.</p>
+                <p>
+                    Architected an MCQ platform supporting timed quizzes and automated
+                    evaluation using Spring Boot for robust RESTful services and MongoDB
+                    for storage.
+                </p>
                 <div class="tech-tags">
                     <span>Spring Boot</span><span>React</span><span>MongoDB</span>
                 </div>
@@ -111,10 +149,36 @@
         </div>
     </section>
 
+    <section id="contact" class="container">
+        <div class="section-header">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <p id="formStatus" class="form-status"></p>
+        </form>
+
+    </section>
+
     <footer>
         <p>Rucha Gade &copy; 2025 | Built with Passion for Backend Engineering</p>
     </footer>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
