@@ -251,6 +251,28 @@ nav {
     font-size: 0.75rem;
 }
 
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.project-links a {
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-links a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* --- Contact Form --- */
 .contact-form {
     max-width: 600px;
