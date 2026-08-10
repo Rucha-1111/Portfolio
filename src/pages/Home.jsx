@@ -86,7 +86,7 @@ export default function Home() {
       </div>
 
       <Reveal className="panel">
-        <span className="kicker">01 — ABOUT ME</span>
+        <span className="kicker">ABOUT ME</span>
         <h2>Hey, I'm Rucha 👋</h2>
         <p className="lead">A curious developer who loves solving problems, shipping clean products, and writing about the journey.</p>
         <div className="about-grid">
@@ -112,7 +112,7 @@ export default function Home() {
       </Reveal>
 
       <Reveal className="panel">
-        <span className="kicker">02 — THINGS I'VE BUILT</span>
+        <span className="kicker">THINGS I'VE BUILT</span>
         <h2>Selected Projects</h2>
         <p className="lead">A few things I've shipped, broken, fixed, and shipped again.</p>
         <div className="proj-grid">
@@ -164,8 +164,9 @@ export default function Home() {
         <div style={{ marginTop: 32 }}><Link className="proj-link" to="/projects">View all projects →</Link></div>
       </Reveal>
 
+    {/*
       <Reveal className="panel">
-        <span className="kicker">03 — WORDS I WRITE</span>
+        <span className="kicker">WORDS I WRITE</span>
         <h2>From the Blog</h2>
         <p className="lead">Thoughts on code, slow living, and everything in between.</p>
         <div className="blog-grid">
@@ -196,9 +197,10 @@ export default function Home() {
         </div>
         <div style={{ marginTop: 32 }}><Link className="proj-link" to="/blogs">Read all posts →</Link></div>
       </Reveal>
+    */}
 
       <Reveal className="panel">
-        <span className="kicker">04 — LET'S CONNECT</span>
+        <span className="kicker">LET'S CONNECT</span>
         <div className="contact-box" style={{ textAlign: 'center' }}>
           <h2>Have a project in mind?</h2>
           <p className="lead" style={{ margin: '0 auto' }}>I'd love to hear about it — drop a message and I'll get back to you soon.</p>
