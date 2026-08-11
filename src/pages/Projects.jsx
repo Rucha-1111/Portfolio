@@ -7,57 +7,36 @@ const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'backend', label: 'Backend' },
   { key: 'frontend', label: 'Frontend' },
-  { key: 'ai', label: 'AI / Data' },
+  //{ key: 'ai', label: 'AI / Data' },
 ]
 
 const PROJECTS = [
   {
+    icon: '🗂️',
+    title: 'Task Forge',
+    desc: 'A team task manager built to turn messy assignments into clear, trackable workflows.',
+    tags: ['Java', 'Spring Boot', 'PostgreSQL'],
+    filterTags: ['backend'],
+    repoLink: 'https://github.com/Rucha-1111/Task-Forge',
+    liveLink: 'https://task-forge-lbt3.onrender.com/',
+  },
+  {
     icon: '📚',
-    title: 'DevJourney',
-    desc: "A full-stack blogging platform where developers can write, store and discover technical stories. Built with a focus on clean editing UX and fast page loads.",
+    title: 'The Chamber of Chapters',
+    desc: "My little Hogwarts for books — a personal library to track what I'm reading, finishing, and hoarding.",
+    tags: ['Java', 'Spring Boot', 'PostgreSQL'],
+    filterTags: ['backend'],
+    repoLink: 'https://github.com/Rucha-1111/The-Chamber-of-Chapters',
+    liveLink: 'https://the-chamber-of-chapters.onrender.com/',
+  },
+  {
+    icon: '📖',
+    title: 'DevDiary',
+    desc: 'A personal developer tracker for logging work, tracking goals, time, progress, and notes.',
     tags: ['Spring Boot', 'React', 'PostgreSQL'],
     filterTags: ['backend', 'frontend'],
-    linkLabel: 'Live Demo →',
-  },
-  {
-    icon: '📡',
-    title: 'Code Radar',
-    desc: 'A developer analytics dashboard that turns raw GitHub activity into clean, readable insights — commits, streaks, and language breakdowns at a glance.',
-    tags: ['JavaScript', 'Chart.js', 'GitHub API'],
-    filterTags: ['frontend', 'ai'],
-    linkLabel: 'Live Demo →',
-  },
-  {
-    icon: '🔍',
-    title: 'Lumos Search',
-    desc: 'An AI-powered semantic search engine that understands meaning, not just keywords, for faster and more relevant results.',
-    tags: ['Python', 'FastAPI', 'PostgreSQL'],
-    filterTags: ['ai', 'backend'],
-    linkLabel: 'Live Demo →',
-  },
-  {
-    icon: '🗂️',
-    title: 'TaskForge API',
-    desc: 'A REST API for a task management system with role-based auth, built to explore clean architecture and testable service layers.',
-    tags: ['Java', 'Spring Boot', 'JWT'],
-    filterTags: ['backend'],
-    linkLabel: 'View Code →',
-  },
-  {
-    icon: '🎨',
-    title: 'Palette Playground',
-    desc: 'A small tool for generating and previewing accessible color palettes for UI design, with live contrast checking.',
-    tags: ['React', 'Tailwind CSS'],
-    filterTags: ['frontend'],
-    linkLabel: 'Live Demo →',
-  },
-  {
-    icon: '🧠',
-    title: 'StudyBuddy',
-    desc: 'An AI study companion that turns lecture notes into summaries and quiz questions to make revision less painful.',
-    tags: ['Python', 'OpenAI API'],
-    filterTags: ['ai'],
-    linkLabel: 'View Code →',
+    repoLink: 'https://github.com/Rucha-1111/DevDiary',
+    liveLink: 'https://devdiary-8q0b.onrender.com/',
   },
 ]
 
@@ -106,7 +85,10 @@ export default function Projects() {
                   <span key={t} className="tag">{t}</span>
                 ))}
               </div>
-              <a className="proj-link" href="#">{p.linkLabel}</a>
+              <div className="proj-links">
+                <a className="proj-link" href="#">View Repo ↗</a>
+                <a className="proj-link" href="#">Live Project ↗</a>
+              </div>
             </div>
           ))}
         </div>

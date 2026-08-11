@@ -22,7 +22,7 @@ export default function Nav() {
       <ul className={`navlinks${open ? ' open' : ''}`}>
         <li><NavLink to="/about" className={linkClass} onClick={close}>About Me</NavLink></li>
         <li><NavLink to="/projects" className={linkClass} onClick={close}>Projects</NavLink></li>
-        {/*<li><NavLink to="/blogs" className={linkClass} onClick={close}>Blogs</NavLink></li>*/}
+        <li><NavLink to="/blogs" className={linkClass} onClick={close}>Blogs</NavLink></li>
         <li><NavLink to="/resume" className={linkClass} onClick={close}>Resume</NavLink></li>
         <li><NavLink to="/contact" className={linkClass} onClick={close}>Contact</NavLink></li>
       </ul>

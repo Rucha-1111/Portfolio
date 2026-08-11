@@ -36,14 +36,10 @@ export default function About() {
           <div className="about-card">
             <h3 style={{ fontSize: 19, marginBottom: 20 }}>My Story</h3>
             <p style={{ color: 'var(--muted)', lineHeight: 1.75, fontSize: 14.5 }}>
-              I started out tinkering with small scripts just to see what would happen, and somewhere along the way
-              that curiosity turned into a habit of building. Today I split my time between writing backend systems
-              that hold up under pressure and writing essays that help me make sense of things.
+              I don’t think being a developer means knowing every line of code by heart. I use AI and other tools to build faster, but I still want to understand the systems I’m building — not just make them compile.
             </p>
             <p style={{ color: 'var(--muted)', lineHeight: 1.75, fontSize: 14.5, marginTop: 14 }}>
-              I care less about chasing trends and more about understanding how things actually work — whether that's
-              a database query plan or a good story structure. Outside of code, you'll find me reading, journaling,
-              or slowly working through a very long watchlist.
+              That’s also why I’m drawn to product and business: understanding the problem, the people, and the decisions behind what gets built. Long term, I want to work where technology and strategy overlap. Outside work: books, walks, dancing, and too many things on my watchlist.
             </p>
           </div>
         </div>
@@ -73,18 +69,18 @@ export default function About() {
         <div className="proj-grid">
           <div className="proj-card">
             <div className="proj-icon">🎯</div>
-            <h3>Craft over shortcuts</h3>
-            <p>I'd rather understand a problem deeply than paste my way to a fix that breaks later.</p>
+            <h3>🎮 Main Quest: Still Loading</h3>
+            <p>I know roughly where I want to go. The fun part is collecting enough experience to unlock the next bit.</p>
           </div>
           <div className="proj-card">
             <div className="proj-icon">📖</div>
-            <h3>Writing to think</h3>
-            <p>Every blog post starts as a note to myself, trying to untangle something I'm still figuring out.</p>
+            <h3>🧩 Inventory Full</h3>
+            <p>Books, half-finished ideas, random skills, questionable side projects — somehow they all end up being useful eventually.</p>
           </div>
           <div className="proj-card">
             <div className="proj-icon">🤝</div>
-            <h3>Open to collaborate</h3>
-            <p>Always happy to jam on an interesting idea, internship, or open-source project.</p>
+            <h3>🚪 Next Level: Open</h3>
+            <p>Open to the right opportunity, especially if it comes with good problems and room to grow.</p>
           </div>
         </div>
       </Reveal>
@@ -92,7 +88,7 @@ export default function About() {
       <Reveal className="panel">
         <div className="contact-box" style={{ textAlign: 'center' }}>
           <h2>Let's build something together</h2>
-          <p className="lead" style={{ margin: '0 auto' }}>Got a project, internship, or just want to talk shop?</p>
+          <p className="lead" style={{ margin: '0 auto' }}>Got a project, full-time opportunities, or just want to talk shop?</p>
           <div className="hero-cta" style={{ justifyContent: 'center' }}>
             <Link className="btn btn-primary" to="/contact">Get In Touch →</Link>
             <Link className="btn btn-ghost" to="/resume">See My Resume</Link>

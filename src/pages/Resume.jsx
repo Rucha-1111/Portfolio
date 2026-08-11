@@ -46,8 +46,8 @@ export default function Resume() {
             <span className="kicker">✦ WHO I AM</span>
             <h3>The Short Story 📖</h3>
             <p className="tiny">
-              B.Tech Computer Science graduate with hands-on experience designing and deploying Java backend systems and
-              cloud-based applications using Spring Boot, AWS, REST APIs, and MySQL.
+              A <b>2026 B.Tech Computer Science graduate</b> with hands-on experience designing and deploying Java backend systems and
+              cloud-based applications using <b>Spring Boot, AWS, REST APIs, and MySQL.</b>
             </p>
             <p className="tiny">
               Built and deployed <strong>3 full-stack REST APIs</strong> with Docker, including a{' '}

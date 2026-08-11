@@ -23,7 +23,7 @@ export default function Contact() {
             <div>
               <span className="kicker">REACH ME DIRECTLY</span>
               <h2>Let's start a conversation</h2>
-              <p className="lead" style={{ marginBottom: 0 }}>Whether it's a project, an internship, or just a friendly hello — my inbox is always open.</p>
+              <p className="lead" style={{ marginBottom: 0 }}>Whether it's a project, a full-time opportunity, or just a friendly hello — my inbox is always open.</p>
               <div className="contact-links">
                 <a href="mailto:rucha.work111@email.com">✉️ rucha.work111@email.com</a>
                 <a href="https://www.linkedin.com/in/rucha-gade/" target="_blank" rel="noopener noreferrer">💼 linkedin.com/in/rucha-gade/</a>

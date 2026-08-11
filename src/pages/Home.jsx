@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal.jsx'
 import Ground from '../components/Ground.jsx'
+import blogs from '../data/blogs'
 
 const TYPE_LINES = [
   '> building things that matter_',
   '> currently writing a new blog post_',
-  '> open to internships & collabs_',
+  '> open to full time opportunities_',
+  '> might be on my fifth cup of coffee_'
 ]
 
 // Ports the exact typewriter algorithm from the original script.js
@@ -47,6 +49,10 @@ export default function Home() {
   useEffect(() => {
     document.title = 'Rucha Gade — Home'
   }, [])
+
+  const latestBlogs = [...blogs]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 3)
 
   return (
     <>
@@ -164,40 +170,45 @@ export default function Home() {
         <div style={{ marginTop: 32 }}><Link className="proj-link" to="/projects">View all projects →</Link></div>
       </Reveal>
 
-    {/*
+
       <Reveal className="panel">
         <span className="kicker">WORDS I WRITE</span>
         <h2>From the Blog</h2>
-        <p className="lead">Thoughts on code, slow living, and everything in between.</p>
+        <p className="lead">
+          Thoughts on code, slow living, and everything in between.
+        </p>
+
         <div className="blog-grid">
-          <Link className="blog-card" to="/blogs">
-            <div className="blog-thumb">🕯️</div>
-            <div className="blog-body">
-              <h3>The Art of Slow Living in a Fast World</h3>
-              <p>A reflection on slowing down while everything around keeps speeding up.</p>
-              <div className="blog-meta"><span>Aug 5, 2024</span><span>5 min read</span></div>
-            </div>
-          </Link>
-          <Link className="blog-card" to="/blogs">
-            <div className="blog-thumb">🌅</div>
-            <div className="blog-body">
-              <h3>Dear Future Me</h3>
-              <p>A letter to my future self about growth, patience and the journey ahead.</p>
-              <div className="blog-meta"><span>Jul 28, 2024</span><span>4 min read</span></div>
-            </div>
-          </Link>
-          <Link className="blog-card" to="/blogs">
-            <div className="blog-thumb">🌌</div>
-            <div className="blog-body">
-              <h3>When Code Meets Creativity</h3>
-              <p>Writing and coding aren't so different — both start with a blank page.</p>
-              <div className="blog-meta"><span>Jul 15, 2024</span><span>4 min read</span></div>
-            </div>
+          {latestBlogs.map((blog, index) => (
+            <Link
+              key={blog.slug}
+              className="blog-card"
+              to={`/blogs/${blog.slug}`}
+            >
+              <div className="blog-thumb">
+                {['🕯️', '🌅', '🌌'][index]}
+              </div>
+
+              <div className="blog-body">
+                <h3>{blog.title}</h3>
+
+                <p>{blog.description}</p>
+
+                <div className="blog-meta">
+                  <span>{blog.date}</span>
+                  <span>{blog.readTime}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 32 }}>
+          <Link className="proj-link" to="/blogs">
+            Read all posts →
           </Link>
         </div>
-        <div style={{ marginTop: 32 }}><Link className="proj-link" to="/blogs">Read all posts →</Link></div>
       </Reveal>
-    */}
 
       <Reveal className="panel">
         <span className="kicker">LET'S CONNECT</span>
